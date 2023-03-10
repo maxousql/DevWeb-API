@@ -16,7 +16,7 @@ let tabNb = [];
 for (let i = 1; i < 10; i++) {
     tabNb.push(i)
 }
-console.log("Exercice 1 :\n", tabNb);
+console.log("Exercice 1 :\n", tabNb.forEach((value, index, array) => {console.log(value)}));
 
 // Exercice 2 :
 // ***************************************

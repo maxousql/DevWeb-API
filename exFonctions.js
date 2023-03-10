@@ -1,17 +1,36 @@
+/**************************************************** 
+ *                                                  *
+ *      Développement WEB et API                    *
+ *      M. BENDAHMANE                               *
+ *      Exercice sur les fonctions                  *
+ *      Auteur: LAI YIO LAI TONG Maxime             *
+ *      B2 ESGI                                     *
+ *                                                  *
+ ****************************************************/
+
+// Exercice 1 :
+// ***************************************
 // Écrivez une fonction qui prend deux nombres comme arguments et renvoie leur somme.
+// ***************************************
 function sum(nb1, nb2) {
     return nb1 + nb2;
 }
 console.log('Exercice 1 :\n', sum(2, 3));
 
+// Exercice 2 :
+// ***************************************
 // Écrivez une fonction qui prend un tableau de nombres et renvoie le plus grand nombre du tableau.
+// ***************************************
 function maxInTab(tab) {
     return Math.max(...tab);
 }
 console.log('Exercice 2 :\n', maxInTab([1, 3, 4, 5]));
 
+// Exercice 3 :
+// ***************************************
 // Écrivez une fonction qui prend une chaîne de caractères et renvoie 
 // une nouvelle chaîne de caractères dont toutes les voyelles ont été supprimées.
+// ***************************************
 function supVoyelles(chaine) {
     const voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
     const caracteres = chaine.split('');
@@ -21,16 +40,22 @@ function supVoyelles(chaine) {
 }
 console.log('Exercice 3 :\n', supVoyelles('bonjour anna'));
 
+// Exercice 4 :
+// ***************************************
 // Écrivez une fonction qui prend un tableau de chaînes de caractères 
 // et renvoie un tableau de chaînes de caractères triées par ordre alphabétique.
+// ***************************************
 function trieAlpha(chaine) {
     chaine.sort();
     return chaine;
 }
 console.log('Exercice 4 :\n', ['hello my friends', 'how are you', 'alphananard']);
 
+// Exercice 5 :
+// ***************************************
 // Écrivez une fonction qui prend un nombre en argument et renvoie une chaîne de caractères représentant ce nombre en mots. 
 // Par exemple, si l'entrée est 42, la fonction doit retourner "quarante-deux".
+// ***************************************
 function nbEnMots(nb) {
     let mots = '';
 
@@ -63,12 +88,16 @@ function nbEnMots(nb) {
 
     return mots;
 }
+console.log("Exercice 5 :\n");
 for (let i = 0; i < 101; i++) {
     console.log(nbEnMots(i));
 }
 
+// Exercice 6 :
+// ***************************************
 // Écrivez une fonction qui prend un tableau d'objets et un nom de propriété 
 // et renvoie un tableau des valeurs de cette propriété dans chaque objet.
+// ***************************************
 function propriete(tabPropriete, name) {
     let tabInfoPropriete = [];
     for (let i = 0; i < tabPropriete.length; i++) {
@@ -79,9 +108,12 @@ function propriete(tabPropriete, name) {
     return tabInfoPropriete;
 }
 
-console.log(propriete(tabPropriete = [{ type: "villa", prix: "1000000" }, { type: "appartement", prix: "100000" }], "Paul"));
+console.log("Exercice 6 :\n", propriete(tabPropriete = [{ type: "villa", prix: "1000000" }, { type: "appartement", prix: "100000" }], "Paul"));
 
+// Exerice 7 :
+// ***************************************
 // Écrivez une fonction qui prend un tableau de nombres et renvoie un tableau de nombres triés par ordre décroissant. 
+// ***************************************
 function compareNombres(a, b) {
     return a - b;
 }
@@ -91,10 +123,13 @@ function trieNumDecroissant(chaineNb) {
     const chaineNbInversee = chaineNb.reverse();
     return chaineNbInversee;
 }
-console.log(trieNumDecroissant([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 200]));
+console.log("Exercice 7 :\n",trieNumDecroissant([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 200]));
 
+// Exercice 8 :
+// ***************************************
 // Écrivez une fonction qui prend une chaîne de caractères 
 // et renvoie une nouvelle chaîne avec toutes les voyelles en majuscules. 
+// ***************************************
 function majVoyelles(chaine) {
     const voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
     chaine = chaine.toLowerCase();
@@ -107,9 +142,12 @@ function majVoyelles(chaine) {
     return caracteres.join('');
 }
 const result = majVoyelles("Hello world!");
-console.log(result)
+console.log("Exercice 8 :\n",result)
 
+// Exercice 9 :
+// ***************************************
 // Écrivez une fonction qui prend une chaîne de caractères et renvoie le nombre de voyelles dans cette chaîne.
+// ***************************************
 function nbVoyelles(chaine) {
     const voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
     let nbVoyelles = 0;
@@ -120,10 +158,13 @@ function nbVoyelles(chaine) {
     }
     return nbVoyelles;
 }
-console.log(nbVoyelles("Hello world!"));
+console.log("Exercice 9 :\n",nbVoyelles("Hello world!"));
 
+// Exercice 10 :
+// ***************************************
 // Écrivez une fonction qui prend une chaîne de caractères 
 // et renvoie une nouvelle chaîne avec toutes les consonnes en majuscules. 
+// ***************************************
 function majConsonnes(chaine) {
     const voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
     chaine = chaine.toLowerCase();
@@ -135,4 +176,4 @@ function majConsonnes(chaine) {
     }
     return caracteres.join('');
 }
-console.log(majConsonnes("Hello world!"));
+console.log("Exercice 10 :\n",majConsonnes("Hello world!"));
